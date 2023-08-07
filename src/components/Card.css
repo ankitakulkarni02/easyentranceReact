@@ -1,0 +1,77 @@
+.EntranceHome{
+    margin-left: 120px;
+    display: grid;
+    margin-top:30px;
+   
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+.cards {
+    
+    margin-bottom: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+     /* Adjust as needed */
+  }
+  
+  .card {
+    width: calc(70% - 30px); /* Adjust as needed */
+    padding: 15px; /* Adjust as needed */
+    box-sizing: border-box;
+    margin: 15px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card_img {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .card__info {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .card_name {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .card__description {
+    font-size: 0.9rem;
+    color: #555;
+  }
+ 
+  .button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ba80f0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 768px) {
+    .EntranceHome {
+      grid-template-columns: 100%;
+      margin-left: 0;
+    }
+  
+    .card {
+      width: calc(100% - 30px);
+    }
+  }
+  

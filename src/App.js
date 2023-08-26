@@ -8,7 +8,8 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import EntranceExams from "./components/EntranceExams";
-
+import ExamData from "./data/ExamData";
+import Card from "./components/Card";
 function App() {
   const theme = {
     colors: {
@@ -50,6 +51,10 @@ function App() {
             <Route path="/contact" component={Contact} exact>
               <Contact />{" "}
             </Route>
+
+            {ExamData.map((exam, index) => (
+              <Route key={index} path={exam.link} component={exam.component} />
+            ))}
           </Switch>
           <Footer />
         </Router>

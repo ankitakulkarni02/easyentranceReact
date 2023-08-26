@@ -1,0 +1,56 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px; /* Negative margin to counteract outer margins */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .horizontal-card {
+    flex-basis: calc(33.33% - 20px); /* Divide screen into 3 parts with margins */
+    margin: 10px; /* Margin for each card */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #efe3f3, #e0cffb);
+    transition: transform 0.2s;
+  }
+  
+  .horizontal-card:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .horizontal-card {
+      flex-basis: calc(50% - 20px); /* Divide screen into 2 parts with margins */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .horizontal-card {
+      flex-basis: calc(100% - 20px); /* Full width with margins */
+    }
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 20px; /* Increased font size */
+    color: #3508fc; /* Dark shade */
+    text-shadow: 1px 1px 2px rgba(197, 63, 250, 0.4); /* Dark blue shadow */
+  }
+  
+  .download-link {
+    text-decoration: none;
+    color: #1e5085;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  
+  

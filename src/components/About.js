@@ -5,7 +5,7 @@ const About = () => {
   const data={
     name:'Ankita Kulkarni',
     image:'./assets/about',
-    para:'Hello Ankita Here...I am Third Year undergrad IT Student at Government College Of Engineering Karad. Hope this web application would help you. All the very Bestt!!'
+    para:'Hello Ankita Here...I am Final Year undergrad IT Student at Government College Of Engineering Karad. Hope this web application would help you. All the Very Bestt!!'
   };
   return (
  

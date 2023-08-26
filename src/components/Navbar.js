@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Navbar.css';
+import '../Css/Navbar.css';
 import {Link} from 'react-router-dom';
 
 import { FaBookOpen} from 'react-icons/fa';
